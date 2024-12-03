@@ -1,6 +1,6 @@
-﻿using System.IO;                                                                                                    // using System.IO, a namespace used here to permit the reading of the data file with the "File" class
-using System.Linq;                                                                                                  // using System.Linq (language integrated query) for the Count method for part 2
-                                                                                                                    //
+﻿using System.IO;
+using System.Linq;
+
 namespace AdventOfCode2024
 {
     public class Day1
@@ -12,7 +12,7 @@ namespace AdventOfCode2024
             int[] array1 = new int[lines.Length]; int[] array2 = new int[lines.Length];
 
             for(int i = 0; i < lines.Length; i++){
-                string[] columns = lines[i].Split(new[] { ' '}, StringSplitOptions.RemoveEmptyEntries);
+                string[] columns = lines[i].Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries);
                 array1[i] = int.Parse(columns[0]);
                 array2[i] = int.Parse(columns[1]);
             }
