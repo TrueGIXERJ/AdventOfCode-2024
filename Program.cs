@@ -11,6 +11,8 @@ namespace AdventOfCode2024
             Benchmark.Measure(Day1.Solve);
             Console.WriteLine("Day 2 Solutions:");
             Benchmark.Measure(Day2.Solve);
+            Console.WriteLine("Day 3 Solutions:");
+            Benchmark.Measure(Day3.Solve);
         }
     }
 }
