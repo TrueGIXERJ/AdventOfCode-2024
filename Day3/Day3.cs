@@ -24,6 +24,29 @@ namespace AdventOfCode2024
                 ans += values[0] * values[1];
                 index = 0;
             }
+
+            Console.WriteLine(ans);
+            ans = 0;
+            bool mul = true;
+            index = 0;
+
+            sPattern = @"do\(\)|don't\(\)|mul\(\d+,\d+\)";
+            matches = Regex.Matches(data, sPattern);
+            foreach(Match match in matches){
+                if(match.Value == "do()"){mul = true;}
+                else if(match.Value == "don't()"){mul = false;}
+                else{
+                    if(mul == true){
+                        string sPattern2 = @"\d+";
+                        foreach(Match match2 in Regex.Matches(match.Value, sPattern2)){
+                            values[index] = int.Parse(match2.Value);
+                            index++;
+                        }
+                        ans += values[0] * values[1];
+                        index = 0;
+                    }
+                }
+            }
             Console.WriteLine(ans);
         }
     }
