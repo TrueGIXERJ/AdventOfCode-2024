@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-namespace AdventOfCode2024
+﻿namespace AdventOfCode2024
 {
     class Program
     {
@@ -13,6 +10,8 @@ namespace AdventOfCode2024
             Benchmark.Measure(Day2.Solve);
             Console.WriteLine("Day 3 Solutions:");
             Benchmark.Measure(Day3.Solve);
+            Console.WriteLine("Day 4 Solutions:");
+            Benchmark.Measure(Day4.Solve);
         }
     }
 }
