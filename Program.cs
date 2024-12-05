@@ -12,6 +12,8 @@
             Benchmark.Measure(Day3.Solve);
             Console.WriteLine("Day 4 Solutions:");
             Benchmark.Measure(Day4.Solve);
+            Console.WriteLine("Day 5 Solutions:");
+            Benchmark.Measure(Day5.Solve);
         }
     }
 }
